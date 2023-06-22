@@ -1,12 +1,12 @@
 {
   "host": "${process.env.HOST}",
-  "port": "${process.env.PORT || 1337}",
+  "port": "${process.env.PORT} || 1337",
   "production": true,
   "proxy": {
     "enabled": false
   },
   "app":{
-    "keys": "${process.env.APP_KEYS || /5C4mdIir4f6cY/Gk+9bzQ==,fqARTgtikjMCXvRTDseK/A==,de5ecOzVXmpReRs8LM4TAA==,d6z8PdatF6ZThNTgX18z7g==}"
+    "keys": "${process.env.APP_KEYS} || /5C4mdIir4f6cY/Gk+9bzQ==,fqARTgtikjMCXvRTDseK/A==,de5ecOzVXmpReRs8LM4TAA==,d6z8PdatF6ZThNTgX18z7g=="
   },
   "cron": {
     "enabled": false
