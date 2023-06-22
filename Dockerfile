@@ -1,4 +1,4 @@
-FROM node:16
+FROM node:18
 
 ENV PORT 1337
 ENV HOST 0.0.0.0
