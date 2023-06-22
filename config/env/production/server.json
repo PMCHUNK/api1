@@ -5,6 +5,9 @@
   "proxy": {
     "enabled": false
   },
+  "app":{
+    "keys": "${process.env.APP_KEYS}"
+  },
   "cron": {
     "enabled": false
   },
