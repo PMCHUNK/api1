@@ -10,6 +10,15 @@ RUN mkdir -p /usr/src/app
 WORKDIR /usr/src/app
 
 # Install app dependencies
-COPY . /usr/src/app/
+COPY package*.json /usr/src/app/
+RUN npm install --global yarn --force
+COPY yarn.lock /usr/src/app/
+RUN yarn install
+
+# Bundle app source
+COPY . /usr/src/app
+
+RUN yarn build
 EXPOSE 1337
-CMD ["npm", "run", "start"]
+
+CMD [ "yarn", "start" ]
