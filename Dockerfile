@@ -10,7 +10,7 @@ WORKDIR /usr/src/app
 
 # Install app dependencies
 COPY package*.json /usr/src/app/
-RUN npm install --global yarn
+RUN npm install --global yarn --force
 COPY yarn.lock /usr/src/app/
 RUN yarn install
 
