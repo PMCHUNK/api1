@@ -14,7 +14,7 @@ COPY . .
 RUN yarn build
 
 # Creating final production image
-FROM ode:18.16-alpine3.18
+FROM node:18.16-alpine3.18
 RUN apk add --no-cache vips-dev
 ARG NODE_ENV=production
 ENV NODE_ENV=production
