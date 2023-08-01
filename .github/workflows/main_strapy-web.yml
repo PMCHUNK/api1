@@ -52,5 +52,5 @@ jobs:
         with:
           app-name: 'strapy-web'
           slot-name: 'Production'
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_90D731A35FD946FFB241DD4503ED88CE }}
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_FAA412B7C13E4BA18F18CEF59E4E534D }}
           package: .
